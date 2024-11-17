@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+    <form>
+      <h1>SIGN UP YOUR USER ACCOUNT</h1>
+      <p>Fill all form fields to go to the next step</p>
+      
+      <div class="progress-bar">
+        <div class="step active">
+          <span class="icon">🔒</span>
+          <p>Account</p>
+        </div>
+        <div class="step">
+          <span class="icon">👤</span>
+          <p>Personal</p>
+        </div>
+        <div class="step">
+          <span class="icon">📷</span>
+          <p>Image</p>
+        </div>
+        <div class="step">
+          <span class="icon">✔️</span>
+          <p>Finish</p>
+        </div>
+      </div>
+
+      <div class="form-content">
+        <h2>Account Information:</h2>
+        <p>Step 1 - 4</p>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Email Id" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="UserName" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+    </form>
+    </div>
+</body>
+</html>

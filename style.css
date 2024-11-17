@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #6a0dad;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: #ccc;
+    z-index: 0;
+    transform: translateY(-50%);
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step.active p, 
+  .step.active .icon {
+    color: #6a0dad;
+  }
+  
+  .step .icon {
+    font-size: 20px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    color: #ccc;
+  }
+  
+  .step.active .icon {
+    border-color: #6a0dad;
+  }
+  
+  .step p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .form-content {
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 18px;
+    color: #6a0dad;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .next-btn {
+    background: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  .next-btn:hover {
+    background: #5a0dab;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    .progress-bar::before {
+      left: 5%;
+      right: 5%;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .step .icon {
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+  
